@@ -8,14 +8,16 @@ Curiosity is a Discord bot designed to provide quick access to documentation for
 
 ## **Authors**
 
-* Maahir Mitayeegiri
+* [Maahir Mitayeegiri](http://www.fernandokoch.me)
+* [Manikanth Nampally](http://www.fernandokoch.me)
+* [Rakesh Shatamoni](http://www.fernandokoch.me)
 * Academic Supervisor: [Dr. Fernando Koch](http://www.fernandokoch.me)
 
 ---
 
 ## **Research Question**
 
-How can **Prompt Engineering** enhance automated **Requirement Analysis** in Software Development Lifecycles (SDLC) for a documentation retrieval bot?
+How can **Prompt Engineering** enhance automated **Requirement Analysis** in Software Development Lifecycles (SDLC) for a documentation retrieval discord bot?
 
 ---
 
@@ -31,14 +33,15 @@ How can **Prompt Engineering** enhance automated **Requirement Analysis** in Sof
 
 - Implementing **Curiosity**, a Discord bot, as an **AI-driven assistant** for programming documentation.
 - Testing **different Prompt Engineering techniques** for improving query accuracy. The prompting technquies tested are
-  - Zero-Shot prompting
-  - Few-Shot prompting
-  - Chain of Thoughts prompitng
-  - Self-Consistent prompitng
-  - Meta Prompting prompitng
-  - Prompt template prompitng
-  - Negative Prompting
-  - Few Shot and Chan of Thoughts prompitng
+
+  - **Zero-Shot prompting:** No Examples, direct response
+  - **Few-Shot prompting:** Few examples, better guidance
+  - **Chain of Thoughts prompitng:** Step by step reasoning process
+  - **Self-Consistent prompitng:** Multiple responses, majority chosem.
+  - **Meta Prompting prompitng:** Prompt about promt structuing.
+  - **Prompt template prompitng:** Predefined structure for prompts
+  - **Negative Prompting:** Exclude unwanted resonse traits
+  - **Few Shot and Chan of Thoughts prompitng:** Examples plus reasoning steps.
 - Exploring **automated query reformation** to improve bot responses.
 
 ### **Implications for practice**
@@ -95,13 +98,15 @@ The below are results of testing and tweaking prompt techniques
 - Improved bot responses by **fine-tuning NLP processing**.
 - Implemented **context-aware query reformation**, improving result relevance.
 
+For more testing and tweaking refere Appendix
+
 Result and Comparision
 
 1. Zero Shot
    Low temp and num_predict window
 
    ![1740542820180](image/testing/1740542820180.png)
-   Hight temp but low
+   Hight temp but low context and prediction window.
 
    ![1740542903688](image/testing/1740542903688.png)
 
@@ -117,14 +122,14 @@ Result and Comparision
 
    Based on the above result increasing the predction size to have answers
 2. Few Shot:
-   Prompt:  You are Curiosity, a knowledgeable and helpful Discord bot designed to:
+   *Prompt:*  You are Curiosity, a knowledgeable and helpful Discord bot designed to:
    Answer user questions about programming languages, frameworks, and tools.
    Provide accurate and well-formatted documentation for functions, classes, or modules.
    Review and correct code snippets with clear explanations.
    Offer usage examples and best practices when relevant.
    Follow best practices for clarity and correctness.
 
-   Message: What is the difference between a list and a tuple in Python?
+   *Message:* What is the difference between a list and a tuple in Python?
 
    ![1740543221265](image/testing/1740543221265.png)
    Testing with another message: **Message = map() function in Python**
@@ -198,7 +203,7 @@ Result and Comparision
 
    TEMPLATE_AFTER= Only return the structured response with the requested details—no additional explanations, opinions, or unrelated information.
    ![1740544647964](image/testing/1740544647964.png)
-8. FewShot Chain of Thoughts
+7. FewShot Chain of Thoughts
 
    MESSAGE = "map() function in Python"
 
@@ -240,3 +245,17 @@ Result and Comparision
 ---
 
 This report summarizes our work on **automating Requirement Analysis** using **Prompt Engineering** to improve **documentation retrieval** in a **Discord bot**. The results indicate that structured prompts significantly enhance information accuracy and user experience.
+
+## Appendix
+
+Zero shot 
+
+![1740554264870](image/testing/1740554264870.png)
+
+![1740554653750](image/testing/1740554653750.png)
+
+Few shot:
+
+![1740554841430](image/testing/1740554841430.png)
+
+![1740555097227](image/testing/1740555097227.png)

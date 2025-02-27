@@ -206,7 +206,7 @@ Result and Comparision
 
    TEMPLATE_AFTER= Only return the structured response with the requested details—no additional explanations, opinions, or unrelated information.
    ![1740544647964](image/testing/1740544647964.png)
-8. **FewShot Chain of Thoughts**
+7. **FewShot Chain of Thoughts**
 
    f"""You are a knowledgeable documentation bot named **Curiosity**. Your task is to help users with programming-related questions by retrieving documentation and providing structured, easy-to-understand answers.
 
@@ -260,7 +260,7 @@ Result and Comparision
    ![1740601120954](image/MY-REPORT(beta)/1740601120954.png)Message: Say me about types of syntatical errors in python
 
    ![1740604585800](image/MY-REPORT(beta)/1740604585800.png)
-9. Negative Prompting
+8. Negative Prompting
 
 MESSAGE="What is the difference between a list and a tuple in Python?"
 
@@ -367,3 +367,12 @@ From all the templates we ran we came to conclusion that combinig few shot and C
 ---
 
 This report summarizes our work on **automating Requirement Analysis** using **Prompt Engineering** **and its techniques** to improve **documentation retrieval** in a **Discord bot**. The results indicate that structured prompts significantly enhance information accuracy and user experience.
+
+
+---
+
+
+
+### MAKE YOUR CASE:
+
+we have made all the changes and preparation asked in the doucment. We tried different prompts and parametes for individual templates and reported those which we found gave ideal ouptut.
